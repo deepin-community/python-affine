@@ -1,0 +1,27 @@
+Source: python-affine
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Uploaders: Johan Van de Wauw <johan.vandewauw@gmail.com>
+Section: python
+Priority: optional
+Build-Depends: debhelper (>= 10~),
+               dh-python,
+               python3-all,
+               python3-pytest,
+               python3-setuptools
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/debian-gis-team/python-affine
+Vcs-Git: https://salsa.debian.org/debian-gis-team/python-affine.git
+Homepage: https://github.com/sgillies/affine
+
+Package: python3-affine
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends}
+Description: Python 3 Library for handling affine transformations of the plane
+ This library contains functions for handling affine transformations of the
+ plane.
+ .
+ It can be used in georeferenced datasets to transfer image to world
+ coordinates.
+ .
+ This is the Python 3 version of the library.
